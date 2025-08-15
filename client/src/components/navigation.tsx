@@ -30,7 +30,7 @@ export default function Navigation() {
                 className="w-10 h-10 rounded-xl"
               />
               <span className="text-xl font-bold text-gray-900">
-                Vocab Frenzy Fr
+                Vocab Frenzy
               </span>
             </a>
           </Link>
