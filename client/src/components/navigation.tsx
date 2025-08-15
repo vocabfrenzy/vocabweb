@@ -73,16 +73,18 @@ export default function Navigation() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <a
-              href="https://apps.apple.com/ca/app/vocab-frenzy-fr/id6747328745"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-orange text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-              data-testid="nav-download-btn"
-            >
-              Download Free
-            </a>
-
+            {(isPrivacyPage || isSupportPage) && (
+              <a
+                href="https://apps.apple.com/ca/app/vocab-frenzy-fr/id6747328745"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-orange text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                data-testid="nav-download-btn"
+              >
+                Download Free
+              </a>
+            )}
+            
             {/* Mobile menu button */}
             {!isPrivacyPage && !isSupportPage && (
               <button
