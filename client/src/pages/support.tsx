@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Mail } from "lucide-react";
 
 export default function Support() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Navigation />
