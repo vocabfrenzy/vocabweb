@@ -57,7 +57,7 @@ export default function Screenshots() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
-            See It In <span className="bg-gradient-purple bg-clip-text text-transparent">Action</span>
+            See It In <span className="text-purple-custom">Action</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Get a preview of the beautiful interface and engaging gameplay that makes learning French addictive.

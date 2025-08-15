@@ -12,7 +12,7 @@ export default function About() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            About the <span className="bg-gradient-orange bg-clip-text text-transparent">Developer</span>
+            About the <span className="text-orange-custom">Developer</span>
           </h2>
           <p className="text-xl text-gray-600">
             Passionate about making language learning accessible and fun for everyone.

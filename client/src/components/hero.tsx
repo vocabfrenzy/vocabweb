@@ -11,7 +11,7 @@ export default function Hero() {
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Learn French the{" "}
-              <span className="bg-gradient-orange bg-clip-text text-transparent">Fun Way!</span>
+              <span className="text-orange-custom">Fun Way!</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-lg">
               Play mini-games, challenge friends, and climb the leaderboard with Vocab Frenzy. Fast, competitive, and addictive!

@@ -57,7 +57,7 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Why Choose <span className="bg-gradient-orange bg-clip-text text-transparent">Vocab Frenzy</span>?
+            Why Choose <span className="text-orange-custom">Vocab Frenzy</span>?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Tired of boring flashcards? Say bonjour to Vocab Frenzy – the fast-paced, competitive way to master French vocabulary!
