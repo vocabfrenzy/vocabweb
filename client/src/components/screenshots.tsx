@@ -55,20 +55,22 @@ export default function Screenshots() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {screenshots.map((screenshot, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-white p-4 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
               data-testid={`screenshot-${index}`}
             >
-              <img
-                src={screenshot.src}
-                alt={screenshot.title}
-                className="w-full h-96 object-contain rounded-2xl mb-4 bg-gray-50"
-              />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">{screenshot.title}</h3>
-              <p className="text-gray-600">{screenshot.description}</p>
+              <div className="aspect-[9/19.5] mb-4 bg-gray-50 rounded-2xl overflow-hidden">
+                <img
+                  src={screenshot.src}
+                  alt={screenshot.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">{screenshot.title}</h3>
+              <p className="text-sm text-gray-600">{screenshot.description}</p>
             </div>
           ))}
         </div>
