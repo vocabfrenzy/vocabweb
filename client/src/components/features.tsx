@@ -36,9 +36,9 @@ export default function Features() {
     },
     {
       icon: <Shield className="text-2xl" />,
-      title: "Privacy First",
-      description: "No data collection, no ads, no in-app purchases. Just pure learning fun!",
-      highlight: "Secure • Private • Ad-Free",
+      title: "Safe Learning",
+      description: "Designed with student safety in mind, providing a secure environment for French learning.",
+      highlight: "Safe • Secure • Student-Friendly",
       bgColor: "bg-gradient-to-br from-pink-50 to-pink-100", 
       iconBg: "bg-gradient-pink"
     },

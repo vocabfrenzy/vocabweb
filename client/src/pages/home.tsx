@@ -3,7 +3,6 @@ import Hero from "@/components/hero";
 import Features from "@/components/features";
 import Screenshots from "@/components/screenshots";
 import Download from "@/components/download";
-import About from "@/components/about";
 import Support from "@/components/support";
 import Footer from "@/components/footer";
 
@@ -15,7 +14,6 @@ export default function Home() {
       <Features />
       <Screenshots />
       <Download />
-      <About />
       <Support />
       <Footer />
     </div>

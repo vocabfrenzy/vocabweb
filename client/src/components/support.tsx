@@ -3,18 +3,18 @@ import { MessageCircle, Shield, ArrowRight } from "lucide-react";
 export default function Support() {
   const quickFacts = [
     {
-      title: "No Data Collection",
-      description: "Your privacy is protected",
+      title: "Free to Download",
+      description: "Start learning immediately",
       color: "text-green-500"
     },
     {
-      title: "100% Free", 
-      description: "No hidden costs",
+      title: "Regular Updates", 
+      description: "New features coming soon",
       color: "text-blue-500"
     },
     {
-      title: "Regular Updates",
-      description: "Continuous improvement", 
+      title: "iOS Optimized",
+      description: "Built for iPhone & iPad", 
       color: "text-purple-500"
     }
   ];
@@ -58,7 +58,7 @@ export default function Support() {
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Privacy Policy</h3>
             <p className="text-gray-600 mb-6">
-              Learn about our commitment to your privacy. We don't collect any personal data from the app.
+              Learn about our privacy practices and how we handle user data in our French learning app.
             </p>
             <a
               href="https://vocab-frenzy.my.canva.site/vocab-frenzy/#privacy-policy"

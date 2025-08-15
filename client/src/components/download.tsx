@@ -23,8 +23,8 @@ export default function Download() {
             Download on App Store
           </a>
           <div className="text-white/80 text-lg" data-testid="download-info">
-            <div className="font-semibold">100% Free</div>
-            <div className="text-sm">No Ads • No In-App Purchases</div>
+            <div className="font-semibold">Free to Download</div>
+            <div className="text-sm">Start Learning Today</div>
           </div>
         </div>
 

@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
           <div className="mb-12 lg:mb-0">
             <div className="inline-flex items-center px-4 py-2 bg-gradient-orange text-white rounded-full text-sm font-medium mb-6">
-              🎮 Free Download • No Ads • No In-App Purchases
+              🎮 Available on iOS
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Learn French the{" "}
