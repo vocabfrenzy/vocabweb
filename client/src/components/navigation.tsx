@@ -4,9 +4,9 @@ import { Link, useRoute } from "wouter"; // Link is still useful for the logo
 import appLogo from "@/images/Logo.png";
 
 export default function Navigation() {
-  const [match] = useRoute("/");
-  const isHomePage = match;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSupportPage] = useRoute("/support");
+  const [isPrivacyPage] = useRoute("/privacy");
 
   // This function finds an element by its ID and scrolls to it smoothly.
   const scrollToSection = (sectionId: string) => {
@@ -37,35 +37,39 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("features")}
-              className="text-gray-700 hover:text-orange-custom transition-colors"
-              data-testid="nav-features"
-            >
-              Features
-            </button>
-            <button
-              onClick={() => scrollToSection("screenshots")}
-              className="text-gray-700 hover:text-orange-custom transition-colors"
-              data-testid="nav-screenshots"
-            >
-              Screenshots
-            </button>
-            <button
-              onClick={() => scrollToSection("download")}
-              className="text-gray-700 hover:text-orange-custom transition-colors"
-              data-testid="nav-download"
-            >
-              Download
-            </button>
-            {/* UPDATED: Changed from a Link to a button to use the scroll function */}
-            <button
-              onClick={() => scrollToSection("support")}
-              className="text-gray-700 hover:text-orange-custom transition-colors"
-              data-testid="nav-support"
-            >
-              Support
-            </button>
+            {!isPrivacyPage && !isSupportPage && (
+              <>
+                <button
+                  onClick={() => scrollToSection("features")}
+                  className="text-gray-700 hover:text-orange-custom transition-colors"
+                  data-testid="nav-features"
+                >
+                  Features
+                </button>
+                <button
+                  onClick={() => scrollToSection("screenshots")}
+                  className="text-gray-700 hover:text-orange-custom transition-colors"
+                  data-testid="nav-screenshots"
+                >
+                  Screenshots
+                </button>
+                <button
+                  onClick={() => scrollToSection("download")}
+                  className="text-gray-700 hover:text-orange-custom transition-colors"
+                  data-testid="nav-download"
+                >
+                  Download
+                </button>
+                {/* UPDATED: Changed from a Link to a button to use the scroll function */}
+                <button
+                  onClick={() => scrollToSection("support")}
+                  className="text-gray-700 hover:text-orange-custom transition-colors"
+                  data-testid="nav-support"
+                >
+                  Support
+                </button>
+              </>
+            )}
           </div>
 
           <div className="flex items-center space-x-4">
@@ -97,37 +101,39 @@ export default function Navigation() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
-            <div className="flex flex-col space-y-4">
-              <button
-                onClick={() => scrollToSection("features")}
-                className="text-left text-gray-700 hover:text-orange-custom transition-colors py-2"
-                data-testid="mobile-nav-features"
-              >
-                Features
-              </button>
-              <button
-                onClick={() => scrollToSection("screenshots")}
-                className="text-left text-gray-700 hover:text-orange-custom transition-colors py-2"
-                data-testid="mobile-nav-screenshots"
-              >
-                Screenshots
-              </button>
-              <button
-                onClick={() => scrollToSection("download")}
-                className="text-left text-gray-700 hover:text-orange-custom transition-colors py-2"
-                data-testid="mobile-nav-download"
-              >
-                Download
-              </button>
-              {/* UPDATED: Also changed the mobile link to a button */}
-              <button
-                onClick={() => scrollToSection("support")}
-                className="text-left text-gray-700 hover:text-orange-custom transition-colors py-2"
-                data-testid="mobile-nav-support"
-              >
-                Support
-              </button>
-            </div>
+            {!isPrivacyPage && !isSupportPage && (
+              <div className="flex flex-col space-y-4">
+                <button
+                  onClick={() => scrollToSection("features")}
+                  className="text-left text-gray-700 hover:text-orange-custom transition-colors py-2"
+                  data-testid="mobile-nav-features"
+                >
+                  Features
+                </button>
+                <button
+                  onClick={() => scrollToSection("screenshots")}
+                  className="text-left text-gray-700 hover:text-orange-custom transition-colors py-2"
+                  data-testid="mobile-nav-screenshots"
+                >
+                  Screenshots
+                </button>
+                <button
+                  onClick={() => scrollToSection("download")}
+                  className="text-left text-gray-700 hover:text-orange-custom transition-colors py-2"
+                  data-testid="mobile-nav-download"
+                >
+                  Download
+                </button>
+                {/* UPDATED: Also changed the mobile link to a button */}
+                <button
+                  onClick={() => scrollToSection("support")}
+                  className="text-left text-gray-700 hover:text-orange-custom transition-colors py-2"
+                  data-testid="mobile-nav-support"
+                >
+                  Support
+                </button>
+              </div>
+            )}
           </div>
         )}
       </div>
