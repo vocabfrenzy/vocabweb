@@ -1,21 +1,30 @@
-import { Smartphone, Tablet, Music, Laptop, Eye } from "lucide-react";
+import { Smartphone, Tablet } from "lucide-react";
+import screenshot1 from "@/images/1.png";
+import screenshot2 from "@/images/2.png";
+import screenshot3 from "@/images/3.png";
+import screenshot4 from "@/images/4.png";
 
 export default function Screenshots() {
   const screenshots = [
     {
-      src: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=600",
-      title: "Interactive Learning",
-      description: "Fast-paced vocabulary challenges with beautiful, intuitive interface."
+      src: screenshot1,
+      title: "Vocabulary Learning",
+      description: "Learn French words with interactive flashcards and engaging gameplay."
     },
     {
-      src: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=600", 
-      title: "Real-Time Battles",
-      description: "Challenge friends and compete in real-time vocabulary battles."
+      src: screenshot2,
+      title: "Real-Time Challenges", 
+      description: "Challenge friends and compete in fast-paced vocabulary battles."
     },
     {
-      src: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=600",
-      title: "Global Rankings", 
-      description: "Track your progress and compete with players worldwide."
+      src: screenshot3,
+      title: "Progress Tracking",
+      description: "Track your learning progress and see your vocabulary growth."
+    },
+    {
+      src: screenshot4,
+      title: "Game Interface", 
+      description: "Beautiful, intuitive interface designed for effective learning."
     }
   ];
 
@@ -46,7 +55,7 @@ export default function Screenshots() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {screenshots.map((screenshot, index) => (
             <div
               key={index}
@@ -56,7 +65,7 @@ export default function Screenshots() {
               <img
                 src={screenshot.src}
                 alt={screenshot.title}
-                className="w-full h-80 object-cover rounded-2xl mb-4"
+                className="w-full h-96 object-contain rounded-2xl mb-4 bg-gray-50"
               />
               <h3 className="text-xl font-bold text-gray-900 mb-2">{screenshot.title}</h3>
               <p className="text-gray-600">{screenshot.description}</p>

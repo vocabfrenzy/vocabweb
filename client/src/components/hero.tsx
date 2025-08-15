@@ -1,4 +1,4 @@
-import { Play } from "lucide-react";
+import appLogo from "@/images/Logo.png";
 
 export default function Hero() {
   return (
@@ -29,12 +29,7 @@ export default function Hero() {
                 </svg>
                 Download on App Store
               </a>
-              <button className="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-2xl font-semibold text-lg hover:border-orange-custom hover:text-orange-custom transition-all duration-300"
-                data-testid="hero-demo-btn"
-              >
-                <Play className="w-6 h-6 mr-3" />
-                Watch Demo
-              </button>
+
             </div>
             <div className="mt-8 flex items-center space-x-6 text-sm text-gray-500">
               <div className="flex items-center">
@@ -49,9 +44,9 @@ export default function Hero() {
           </div>
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-              alt="Students learning French together"
-              className="rounded-3xl shadow-2xl w-full h-auto transform rotate-3 hover:rotate-0 transition-transform duration-500"
+              src={appLogo}
+              alt="Vocab Frenzy Fr App Logo"
+              className="rounded-3xl shadow-2xl w-full max-w-md mx-auto h-auto transform rotate-3 hover:rotate-0 transition-transform duration-500"
               data-testid="hero-image"
             />
             <div className="absolute -top-4 -right-4 bg-gradient-purple text-white p-4 rounded-2xl shadow-lg"
