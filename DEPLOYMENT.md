@@ -2,6 +2,14 @@
 
 This guide will help you deploy your Vocab Frenzy Fr website to GitHub Pages.
 
+## Important: Repository Setup
+
+Your website is configured to be deployed at: `https://vocabfrenzy.github.io/vocabweb`
+
+Make sure to:
+- Create a repository named `vocabweb` under the `vocabfrenzy` GitHub organization/account
+- Or update the base path in App.tsx if using a different repository name
+
 ## Quick Start
 
 1. **Push to GitHub Repository**
@@ -10,7 +18,7 @@ This guide will help you deploy your Vocab Frenzy Fr website to GitHub Pages.
    git add .
    git commit -m "Initial commit"
    git branch -M main
-   git remote add origin https://github.com/yourusername/vocab-frenzy-website.git
+   git remote add origin https://github.com/vocabfrenzy/vocabweb.git
    git push -u origin main
    ```
 
@@ -31,13 +39,18 @@ node deploy.js
 npx gh-pages -d dist
 ```
 
+**Note**: The app is configured with base path `/vocabweb/` for GitHub Pages. If you need to change this:
+1. Update the Router base in `client/src/App.tsx`
+2. Update the base path in `vite.config.prod.ts`
+3. Rebuild with `node deploy.js`
+
 ## Automatic Deployment
 
 The repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically:
 
 1. Builds your static site when you push to main/master
 2. Deploys it to GitHub Pages
-3. Makes it available at `https://yourusername.github.io/repository-name`
+3. Makes it available at `https://vocabfrenzy.github.io/vocabweb`
 
 ## What Gets Deployed
 

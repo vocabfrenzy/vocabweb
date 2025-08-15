@@ -33,7 +33,7 @@ jobs:
 
       - name: Build static site
         run: |
-          npx vite build
+          npx vite build --config vite.config.prod.ts
           cp -r dist/public/* dist/
 
       - name: Setup Pages

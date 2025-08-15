@@ -10,9 +10,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 console.log('🚀 Starting GitHub Pages deployment...');
 
 try {
-  // Build the static site
-  console.log('📦 Building static site...');
-  execSync('npx vite build', { stdio: 'inherit' });
+  // Build the static site with production config
+  console.log('📦 Building static site for GitHub Pages...');
+  execSync('npx vite build --config vite.config.prod.ts', { stdio: 'inherit' });
 
   // Copy files from dist/public to dist for GitHub Pages
   console.log('📁 Copying files for GitHub Pages...');
@@ -32,6 +32,7 @@ try {
   console.log('3. Navigate to "Pages" in the left sidebar');
   console.log('4. Select "GitHub Actions" as the source');
   console.log('5. Or manually run: npx gh-pages -d dist');
+  console.log('\n🌐 Your site will be available at: https://vocabfrenzy.github.io/vocabweb');
   
 } catch (error) {
   console.error('❌ Deployment failed:', error.message);
