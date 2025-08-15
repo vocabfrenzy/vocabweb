@@ -11,10 +11,24 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50">
       <Navigation />
       <Hero />
-      <Features />
-      <Screenshots />
-      <Download />
-      <Support />
+
+      {/* Add ID attributes for scrolling */}
+      <section id="features">
+        <Features />
+      </section>
+
+      <section id="screenshots">
+        <Screenshots />
+      </section>
+
+      <section id="download">
+        <Download />
+      </section>
+
+      <section id="support">
+        <Support />
+      </section>
+
       <Footer />
     </div>
   );
