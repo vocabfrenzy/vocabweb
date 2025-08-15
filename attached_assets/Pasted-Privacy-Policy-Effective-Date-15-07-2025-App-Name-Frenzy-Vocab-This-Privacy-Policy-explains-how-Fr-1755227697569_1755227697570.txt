@@ -1,0 +1,79 @@
+Privacy Policy Effective Date: 15/07/2025 App Name: Frenzy Vocab This Privacy Policy explains how Frenzy Vocab ("we", "our", or "us") collects, uses, discloses, and protects your information when you use our mobile
+application available on the Apple App Store (the "App"). By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.
+
+
+ 1. Information We Collect We may collect the following types of information: 
+
+a. Personal Information We may collect personal information that you provide directly, such as: Name Email address User ID or account information Payment information (processed securely via Apple)
+
+ b. Automatically Collected Data When you use the App, we may automatically collect: Device information (model, OS version, unique device identifiers) IP address Usage data (screens visited, buttons clicked, time
+spent) Crash and performance data c. Third-Party Information If you sign in using a third-party service (e.g., Apple Sign-In), we may receive limited data (like your name and email) from them, in accordance with their
+privacy settings.
+
+
+ 2. How We Use Your Information We use the collected information to: Provide and maintain the App Improve performance and user experience Respond to user requests and support tickets Send important updates or
+notifications Monitor usage trends and diagnose issues Comply with legal obligations
+
+
+3. Sharing Your Information
+
+We do not sell your personal data. We may share your information with:
+
+Service Providers (e.g. cloud storage) who assist in app functionality
+
+Apple for in-app purchase and account-related purposes
+
+Legal Authorities when required by law or to protect rights and safety
+
+
+4. Third-Party Services
+
+Our App may use third-party services, such as:
+
+Firebase (authentication, database, crash reporting)
+
+Google Analytics or similar tools
+
+Apple APIs (e.g., Apple Sign-In, iCloud)
+
+These services have their own privacy policies and data handling practices.
+
+
+5. Data Retention
+
+We retain your information only for as long as necessary for the purposes set out in this policy, or as required by law.
+
+
+6. Security
+
+We implement industry-standard measures to protect your information. However, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security.
+
+
+7. Your Rights
+
+Depending on your jurisdiction, you may have rights to:
+
+Access, correct, or delete your personal data
+
+Object to processing
+
+Withdraw consent
+
+You can contact us at vlightw22@gmail.com to exercise these rights.
+
+
+8. Children’s Privacy
+
+We do not knowingly collect data from children. If you believe we have inadvertently collected such data, please contact us.
+
+
+9. Changes to This Policy
+
+We may update this Privacy Policy from time to time. When we do, we will revise the "Effective Date" at the top. Significant changes will be communicated within the App or through other appropriate channels.
+
+
+10. Contact Us
+
+If you have questions or concerns about this Privacy Policy or our data practices, you can contact us at:
+
+Email: vlightw22@gmail.com

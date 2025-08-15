@@ -59,16 +59,14 @@ export default function Support() {
             <p className="text-gray-600 mb-6">
               Learn about our privacy practices and how we handle user data in our French learning app.
             </p>
-            <a
-              href="https://vocab-frenzy.my.canva.site/vocab-frenzy/#privacy-policy"
-              target="_blank" 
-              rel="noopener noreferrer"
+            <Link
+              href="/privacy"
               className="inline-flex items-center text-purple-custom font-semibold hover:text-purple-600 transition-colors"
               data-testid="privacy-link"
             >
               Read Privacy Policy
               <ArrowRight className="w-4 h-4 ml-2" />
-            </a>
+            </Link>
           </div>
         </div>
 

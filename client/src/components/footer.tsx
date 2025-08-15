@@ -1,16 +1,21 @@
+import { Link } from "wouter";
+
 export default function Footer() {
   const footerLinks = [
     {
       text: "Support",
-      href: "https://vocab-frenzy.my.canva.site/vocab-frenzy/#support"
+      href: "/support",
+      internal: true
     },
     {
       text: "Privacy", 
-      href: "https://vocab-frenzy.my.canva.site/vocab-frenzy/#privacy-policy"
+      href: "/privacy",
+      internal: true
     },
     {
       text: "App Store",
-      href: "https://apps.apple.com/ca/app/vocab-frenzy-fr/id6747328745"
+      href: "https://apps.apple.com/ca/app/vocab-frenzy-fr/id6747328745",
+      internal: false
     }
   ];
 
@@ -31,16 +36,27 @@ export default function Footer() {
             </div>
             <div className="flex space-x-6 text-sm">
               {footerLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
-                  data-testid={`footer-link-${index}`}
-                >
-                  {link.text}
-                </a>
+                link.internal ? (
+                  <Link
+                    key={index}
+                    href={link.href}
+                    className="text-gray-400 hover:text-white transition-colors"
+                    data-testid={`footer-link-${index}`}
+                  >
+                    {link.text}
+                  </Link>
+                ) : (
+                  <a
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors"
+                    data-testid={`footer-link-${index}`}
+                  >
+                    {link.text}
+                  </a>
+                )
               ))}
             </div>
           </div>
