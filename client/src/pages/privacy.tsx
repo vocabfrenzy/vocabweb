@@ -1,8 +1,12 @@
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Shield } from "lucide-react";
+import { useEffect } from "react";
 
 export default function Privacy() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
