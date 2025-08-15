@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "wouter"; // Link is still useful for the logo
+import { Link, useRoute } from "wouter"; // Link is still useful for the logo
 import appLogo from "@/images/Logo.png";
 
 export default function Navigation() {
+  const [match] = useRoute("/");
+  const isHomePage = match;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // This function finds an element by its ID and scrolls to it smoothly.
