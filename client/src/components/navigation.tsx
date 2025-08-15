@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,13 +47,13 @@ export default function Navigation() {
             >
               Download
             </button>
-            <button
-              onClick={() => scrollToSection('support')}
+            <Link
+              href="/support"
               className="text-gray-700 hover:text-orange-custom transition-colors"
               data-testid="nav-support"
             >
               Support
-            </button>
+            </Link>
           </div>
           
           <div className="flex items-center space-x-4">
@@ -102,13 +103,13 @@ export default function Navigation() {
               >
                 Download
               </button>
-              <button
-                onClick={() => scrollToSection('support')}
+              <Link
+                href="/support"
                 className="text-left text-gray-700 hover:text-orange-custom transition-colors py-2"
                 data-testid="mobile-nav-support"
               >
                 Support
-              </button>
+              </Link>
             </div>
           </div>
         )}

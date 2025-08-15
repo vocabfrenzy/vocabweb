@@ -1,4 +1,5 @@
 import { MessageCircle, Shield, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Support() {
   const quickFacts = [
@@ -40,16 +41,14 @@ export default function Support() {
             <p className="text-gray-600 mb-6">
               Having trouble with the app? Get help with technical issues, gameplay questions, or feature requests.
             </p>
-            <a
-              href="https://vocab-frenzy.my.canva.site/vocab-frenzy/#support"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/support"
               className="inline-flex items-center text-orange-custom font-semibold hover:text-orange-600 transition-colors"
               data-testid="support-link"
             >
               Get Support
               <ArrowRight className="w-4 h-4 ml-2" />
-            </a>
+            </Link>
           </div>
 
           <div className="bg-white p-8 rounded-3xl shadow-lg">
