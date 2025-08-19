@@ -30,7 +30,7 @@ export default function Footer() {
               alt="Vocab Frenzy Fr Logo" 
               className="w-10 h-10 rounded-xl"
             />
-            <span className="text-xl font-bold">Vocab Frenzy Fr</span>
+            <span className="text-xl font-bold">Vocab Frenzy</span>
           </div>
           
           <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8">

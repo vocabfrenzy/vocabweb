@@ -26,7 +26,7 @@ export default function Privacy() {
               Effective Date: 15/07/2025
             </p>
             <p className="text-lg text-gray-600">
-              App Name: Vocab Frenzy Fr
+              App Name: Vocab Frenzy
             </p>
           </div>
 
