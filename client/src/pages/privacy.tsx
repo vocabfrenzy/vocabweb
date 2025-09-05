@@ -81,6 +81,7 @@ export default function Privacy() {
                   <li>Respond to user requests and support tickets</li>
                   <li>Send important updates or notifications</li>
                   <li>Monitor usage trends and diagnose issues</li>
+                  <li>To provide targeted advertising</li>
                   <li>Comply with legal obligations</li>
                 </ul>
               </section>
@@ -92,6 +93,7 @@ export default function Privacy() {
                   <li>Service Providers (e.g. cloud storage) who assist in app functionality</li>
                   <li>Apple for in-app purchase and account-related purposes</li>
                   <li>Legal Authorities when required by law or to protect rights and safety</li>
+                  <li>Advertising partners to provide targeted ads</li>
                 </ul>
               </section>
 
@@ -106,18 +108,23 @@ export default function Privacy() {
                 <p className="text-gray-700 mt-4">These services have their own privacy policies and data handling practices.</p>
               </section>
 
+             <section>
+               <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Your Choices</h2>
+               <p className="text-gray-700">You can opt-out of targeted advertising by adjusting your device's ad tracking settings. We will respect your choice and not use your data for this purpose if you opt-out.</p>
+             </section>
+
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Data Retention</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Data Retention</h2>
                 <p className="text-gray-700">We retain your information only for as long as necessary for the purposes set out in this policy, or as required by law.</p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Security</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Security</h2>
                 <p className="text-gray-700">We implement industry-standard measures to protect your information. However, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Your Rights</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Your Rights</h2>
                 <p className="text-gray-700 mb-4">Depending on your jurisdiction, you may have rights to:</p>
                 <ul className="list-disc ml-6 text-gray-700">
                   <li>Access, correct, or delete your personal data</li>
@@ -130,17 +137,17 @@ export default function Privacy() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Children's Privacy</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Children's Privacy</h2>
                 <p className="text-gray-700">We do not knowingly collect data from children. If you believe we have inadvertently collected such data, please contact us.</p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Changes to This Policy</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Changes to This Policy</h2>
                 <p className="text-gray-700">We may update this Privacy Policy from time to time. When we do, we will revise the "Effective Date" at the top. Significant changes will be communicated within the App or through other appropriate channels.</p>
               </section>
 
               <section className="bg-gradient-to-br from-orange-50 to-purple-50 p-8 rounded-3xl">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Contact Us</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Contact Us</h2>
                 <p className="text-gray-700 mb-4">If you have questions or concerns about this Privacy Policy or our data practices, you can contact us at:</p>
                 <p className="text-lg">
                   <strong>Email:</strong> <a href="mailto:vocab.frenzy@outlook.com" className="text-purple-custom hover:text-purple-600 font-semibold">vocab.frenzy@outlook.com</a>
